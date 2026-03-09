@@ -2,212 +2,219 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>AI & Humanity | E-Book</title>
 
+<!-- Google Fonts for modern typography -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f4f4f4;
-color:#333;
-line-height:1.6;
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-.hero{
-background:linear-gradient(135deg,#0a2540,#1da1f2);
-color:white;
-text-align:center;
-padding:120px 20px;
+a { text-decoration: none; }
+
+/* Sticky Navigation */
+nav {
+    background: #0a2540;
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-.hero h1{
-font-size:48px;
-margin-bottom:10px;
+nav a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.hero p{
-font-size:20px;
-margin-bottom:25px;
+nav a:hover {
+    color: #1da1f2;
 }
 
-.button{
-background:white;
-color:#0a2540;
-padding:15px 30px;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0a2540, #1da1f2);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
 }
 
-.section{
-max-width:1000px;
-margin:auto;
-padding:50px 20px;
+.hero h1 { font-size: 48px; margin-bottom: 10px; }
+.hero p { font-size: 20px; margin-bottom: 25px; }
+.hero .button {
+    background: white;
+    color: #0a2540;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
-.section h2{
-color:#0a2540;
-margin-bottom:20px;
+/* Sections */
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
 }
 
-.chapter-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.section h2 { color: #0a2540; margin-bottom: 20px; }
+
+/* Chapter Grid */
+.chapter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-.card{
-background:white;
-padding:20px;
-border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
 }
 
-.book{
-display:block;
-margin:auto;
-width:220px;
-margin-top:30px;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-border-radius:6px;
+.card:hover { transform: translateY(-5px); }
+
+/* Book Cover */
+.book {
+    display: block;
+    margin: 30px auto;
+    width: 220px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border-radius: 6px;
 }
 
-.download{
-text-align:center;
-padding:60px 20px;
-background:#0a2540;
-color:white;
+/* Download Section */
+.download {
+    text-align: center;
+    padding: 60px 20px;
+    background: #0a2540;
+    color: white;
 }
 
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:20px;
+.download .button {
+    background: #1da1f2;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
 </style>
-
 </head>
 
 <body>
 
+<!-- Navigation -->
+<nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#chapters">Chapters</a>
+    <a href="#author">Author</a>
+    <a href="#download">Download</a>
+</nav>
+
 <!-- HERO SECTION -->
-
-<section class="hero">
-
+<section class="hero" id="hero">
 <h1>AI & Humanity</h1>
-
-<p>
-Exploring Technology, Ethics, and the Future of Human Identity
-</p>
-
-<a href="#download" class="button">
-Download the E-Book
-</a>
-
+<p>Exploring Technology, Ethics, and the Future of Human Identity</p>
+<a href="#download" class="button">Download the E-Book</a>
+<img src="ebook-cover.png" alt="AI & Humanity Book Cover" class="book">
 </section>
-
 
 <!-- ABOUT THE BOOK -->
-
-<section class="section">
-
+<section class="section" id="about">
 <h2>About the Book</h2>
-
 <p>
-
-Artificial Intelligence is rapidly transforming our world. From personalized recommendations to automated decision-making systems, AI influences how we live, work, and interact with technology.
-
-This e-book explores both the promise and the ethical challenges of artificial intelligence. Through philosophy, real-world case studies, and thoughtful reflection, it examines how society can balance innovation with responsibility and human dignity.
-
+Artificial Intelligence is reshaping our daily lives and industries—from personal assistants to automated decision-making.  
+This e-book explores both the promise and ethical challenges of AI, examining privacy, human identity, morality, and the future of society.
 </p>
-
 </section>
-
 
 <!-- CHAPTERS -->
-
-<section class="section">
-
+<section class="section" id="chapters">
 <h2>What You'll Learn</h2>
-
 <div class="chapter-grid">
-
 <div class="card">
-<h3>🏠 AI at Home</h3>
-<p>How algorithms shape everyday life through recommendations, smart devices, and data collection.</p>
+<h3>🏠 Chapter 1: AI at Home</h3>
+<p>How AI influences daily routines, media, and personal choices.</p>
 </div>
-
 <div class="card">
-<h3>💼 AI at Work</h3>
-<p>How automation improves productivity while raising concerns about job displacement.</p>
+<h3>💼 Chapter 2: AI at Work</h3>
+<p>Automation boosts productivity but raises job displacement concerns.</p>
 </div>
-
 <div class="card">
-<h3>⚖️ AI Ethics</h3>
-<p>Why fairness, transparency, and human oversight must guide AI development.</p>
+<h3>🚀 Chapter 3: The Promise of AI</h3>
+<p>Opportunities for faster diagnoses, fraud detection, and education.</p>
 </div>
-
 <div class="card">
-<h3>🚀 The Future of AI</h3>
-<p>How society can move forward responsibly with technology that serves humanity.</p>
+<h3>⚖️ Chapter 4: Risks We Cannot Ignore</h3>
+<p>Bias, privacy loss, and overreliance on automated decisions.</p>
 </div>
-
+<div class="card">
+<h3>🧠 Chapter 5: Philosophy & Moral Responsibility</h3>
+<p>Ethical guidance ensures AI respects human dignity.</p>
 </div>
-
+<div class="card">
+<h3>🙏 Chapter 6: Faith & Human Identity</h3>
+<p>AI is a tool; humans reflect meaning, morality, and spirituality.</p>
+</div>
+<div class="card">
+<h3>✅ Chapter 7: Case Studies</h3>
+<p>Successes in healthcare vs. failures in hiring algorithms.</p>
+</div>
+<div class="card">
+<h3>🔮 Chapter 8: The Future of AI</h3>
+<p>Responsible governance, transparency, and balance are key.</p>
+</div>
+</div>
 </section>
 
-
-<!-- BOOK IMAGE -->
-
-<section class="section">
-
+<!-- AUTHOR -->
+<section class="section" id="author">
 <h2>About the Author</h2>
-
 <p>
-
-Samarria Ladson is a reflective thinker with a passion for philosophy, ethics, and modern technology. Through a balanced perspective of faith, reason, and social responsibility, she explores how innovation shapes humanity's future.
-
-Her work bridges philosophical inquiry and practical realities, encouraging thoughtful engagement with emerging technologies.
-
+Samarria Ladson is a reflective thinker with a passion for philosophy, ethics, and modern technology.  
+Her work bridges philosophical inquiry and practical reality, encouraging thoughtful engagement with emerging technologies.
 </p>
-
 </section>
-
 
 <!-- DOWNLOAD SECTION -->
-
 <section id="download" class="download">
-
 <h2>Download the E-Book</h2>
-
-<p>
-Learn how artificial intelligence is shaping our future and why ethics must guide innovation.
-</p>
-
-<br>
-
-<a href="#" class="button">
-Download Now
-</a>
-
+<p>Learn how AI shapes our world and how ethics must guide innovation.</p>
+<a href="AI-Humanity-Ebook.pdf" download class="button">Download Now</a>
 </section>
 
-
+<!-- FOOTER -->
 <footer>
-
-<p>
-© 2026 AI & Humanity | Created by Samarria Ladson
-</p>
-
+<p>© 2026 AI & Humanity | Created by Samarria Ladson</p>
 </footer>
 
 </body>
-
 </html>
